@@ -52,7 +52,7 @@ export class EVMSwapExecutor implements SwapExecutor {
                     gasPrice: BigInt(tx.gasPrice || 0) * this.DEFAULT_GAS_MULTIPLIER,
                     to: tx.to,
                     value: tx.value || '0',
-                    gas: BigInt(tx.gas || 0) * this.DEFAULT_GAS_MULTIPLIER,
+                    gas: BigInt(tx.gas || 0) * BigInt(2),
                     nonce,
                 };
 
