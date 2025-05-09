@@ -147,11 +147,13 @@ export class SolanaSwapExecutor implements SwapExecutor {
                     symbol: routerResult.fromToken.tokenSymbol,
                     amount: displayFromAmount,
                     decimal: routerResult.fromToken.decimal,
+                    rawAmount: routerResult.fromTokenAmount,
                 },
                 toToken: {
                     symbol: routerResult.toToken.tokenSymbol,
                     amount: displayToAmount,
                     decimal: routerResult.toToken.decimal,
+                    rawAmount: routerResult.toTokenAmount,
                 },
                 priceImpact: routerResult.priceImpactPercentage,
             },

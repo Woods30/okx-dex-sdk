@@ -251,11 +251,13 @@ export interface SwapResult {
         fromToken: {
             symbol: string;
             amount: string;
+            rawAmount: string;
             decimal: string;
         };
         toToken: {
             symbol: string;
             amount: string;
+            rawAmount: string;
             decimal: string;
         };
         priceImpact: string;
